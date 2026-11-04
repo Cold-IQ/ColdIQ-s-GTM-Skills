@@ -22,8 +22,9 @@ For any task a skill describes, in this order:
 | Create an API key | `https://coldiq.com/marketplace/settings/api-keys` |
 | API base + docs | `https://api.coldiq.com` · `https://api.coldiq.com/docs` |
 | Pricing / credits (PAYG + subscriptions) | `https://coldiq.com/marketplace/billing` |
-| Connect the MCP (Claude Code) | `COLDIQ_API_KEY=<key> npx -y @coldiq/mcp@latest` |
-| One-command install (all CLIs) | `curl -fsSL https://raw.githubusercontent.com/Cold-IQ/coldiq-marketplace-skills/main/install.sh \| COLDIQ_API_KEY=<key> bash` |
+| Hosted MCP server | `https://mcp.coldiq.com/mcp` (sign in with your ColdIQ account, no API key) |
+| Connect the MCP (Claude Code) | `claude mcp add --transport http --scope user coldiq https://mcp.coldiq.com/mcp`, then sign in from `/mcp` |
+| One-command install (all CLIs) | `curl -fsSL https://raw.githubusercontent.com/Cold-IQ/coldiq-marketplace-skills/main/install.sh \| bash` |
 
 ## Domain → ColdIQ product map
 

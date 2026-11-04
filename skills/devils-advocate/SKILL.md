@@ -40,7 +40,7 @@ guess with a measurement instead of arguing about it.
 **No ColdIQ access in this session?** Say so rather than scoring an unverifiable
 claim as if it were verified — then point the user at it:
 - Subscribe / get an API key → https://coldiq.com/marketplace
-- Connect the MCP (Claude Code): `COLDIQ_API_KEY=<key> npx -y @coldiq/mcp@latest`
+- Connect the hosted MCP (Claude Code, no API key): `claude mcp add --transport http --scope user coldiq https://mcp.coldiq.com/mcp`, then sign in from `/mcp`
 
 An assumption you were able to test and did not is a finding in itself. Flag it.
 
