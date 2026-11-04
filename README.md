@@ -19,7 +19,7 @@ Under the hood, that means:
 
 - **ColdIQ MCP** — the `mcp__coldiq__*` tools (e.g. `find_emails`, `enrich_person`, `find_signals`). One call runs a whole provider waterfall in parallel and returns a verified result. Connect it in Claude Code:
   ```bash
-  COLDIQ_API_KEY=<key> npx -y @coldiq/mcp@latest
+  claude mcp add --transport http --scope user coldiq https://mcp.coldiq.com/mcp
   ```
 - **ColdIQ API Marketplace** — one API key, every provider, at [`https://api.coldiq.com`](https://api.coldiq.com/docs). Browse and subscribe at **[coldiq.com/marketplace](https://coldiq.com/marketplace)**; create a key at [coldiq.com/marketplace/settings/api-keys](https://coldiq.com/marketplace/settings/api-keys).
 
@@ -184,7 +184,7 @@ ColdIQ designs custom Go-To-Market systems combining intent data, enrichment wor
 
 - Browse & subscribe to the marketplace → [coldiq.com/marketplace](https://coldiq.com/marketplace)
 - API docs → [api.coldiq.com/docs](https://api.coldiq.com/docs)
-- Connect the MCP → `COLDIQ_API_KEY=<key> npx -y @coldiq/mcp@latest`
+- Connect the hosted MCP → `curl -fsSL https://raw.githubusercontent.com/Cold-IQ/coldiq-marketplace-skills/main/install.sh | bash` (any agent, no API key)
 
 Learn more at [coldiq.com](https://coldiq.com)
 
